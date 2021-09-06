@@ -1,0 +1,63 @@
+{
+    "camera": {
+      "eye": [0.0, 0.0, 7.0],
+      "forward": [0.0, 0.0, -1.0],
+      "up": [0.0, 1.0, 0.0],
+      "fov": 45.0
+    },
+    "bvh": {
+      "max_leaf_size": 4,
+      "bucket_number": 16
+    },
+    "max_depth": 2,
+    "output": {
+      "file": "images/test_scene_00_{}.jpg",
+      "width": 800,
+      "height": 600,
+      "scale": 2
+    },
+    "materials": [
+      {
+        "albedo": [1.0, 0.0, 0.0],
+        "ior": 1.5,
+        "roughness": 0.9,
+        "metallic": 0.0,
+        "is_translucent": false
+      },
+      {
+        "albedo": [0.0, 1.0, 0.0],
+        "ior": 1.5,
+        "roughness": 0.9,
+        "metallic": 0.0,
+        "is_translucent": false
+      }
+    ],
+    "meshes": [
+      "models/cube.obj"
+    ],
+    "objects": [
+      {
+        "transform": {
+          "rotate": [0.0, 60.0, 0.0],
+          "translate": [-1.5, 0.0, 0.0]
+        },
+        "mesh": [0, 0],
+        "material": 0
+      },
+      {
+        "transform": {
+          "rotate": [0.0, 60.0, 0.0],
+          "translate": [1.5, 0.0, 0.0]
+        },
+        "mesh": [0, 0],
+        "material": 1
+      }
+    ],
+    "lights": [
+      {
+        "type": "directional",
+        "direction": [-1.0, -1.0, -1.0],
+        "strength": [3.0, 3.0, 3.0]
+      }
+    ]
+  }

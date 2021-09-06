@@ -1,0 +1,139 @@
+{
+    "camera": {
+      "eye": [0.0, 0.0, 4.0],
+      "forward": [0.0, 0.0, -1.0],
+      "up": [0.0, 1.0, 0.0],
+      "fov": 75.0
+    },
+    "bvh": {
+      "max_leaf_size": 4,
+      "bucket_number": 16
+    },
+    "max_depth": 8,
+    "output": {
+      "file": "images/test_scene_01_{}.jpg",
+      "width": 800,
+      "height": 600,
+      "scale": 2
+    },
+    "materials": [
+      {
+        "albedo": [1.0, 1.0, 1.0],
+        "ior": 1.5,
+        "roughness": 1.0,
+        "metallic": 0.0,
+        "is_translucent": false
+      },
+      {
+        "albedo": [0.2, 0.3, 0.5],
+        "ior": 1.5,
+        "roughness": 1.0,
+        "metallic": 0.0,
+        "is_translucent": false
+      },
+      {
+        "albedo": [0.2, 0.5, 0.3],
+        "ior": 1.5,
+        "roughness": 1.0,
+        "metallic": 0.0,
+        "is_translucent": false
+      },
+      {
+        "albedo": [0.9, 0.2, 0.2],
+        "ior": 1.5,
+        "roughness": 0.3,
+        "metallic": 0.0,
+        "is_translucent": false
+      },
+      {
+        "albedo": [0.9, 0.9, 0.9],
+        "ior": 1.5,
+        "roughness": 0.2,
+        "metallic": 0.0,
+        "is_translucent": true
+      }
+    ],
+    "meshes": [
+      "models/cube.obj",
+      "models/plane.obj"
+    ],
+    "objects": [
+      {
+        "transform": {
+          "scale": [1.0, 1.0, 0.2],
+          "translate": [0.0, 0.3, 1.5]
+        },
+        "mesh": [0, 0],
+        "material": 4
+      },
+      {
+        "transform": {
+          "scale": [3.0, 0.5, 0.5],
+          "rotate": [30.0, 0.0, 0.0],
+          "translate": [0.0, 0.3, -1.5]
+        },
+        "mesh": [0, 0],
+        "material": 3
+      },
+      {
+        "transform": {
+          "translate": [0.0, -1.0, 0.0],
+          "scale": [5.0, 1.0, 5.0]
+        },
+        "mesh": [1, 0],
+        "material": 2
+      },
+      {
+        "transform": {
+          "scale": [5.0, 1.0, 3.0],
+          "rotate": [90.0, 0.0, 0.0],
+          "translate": [0.0, 2.0, -5.0]
+        },
+        "mesh": [1, 0],
+        "material": 1
+      },
+      {
+        "transform": {
+          "scale": [5.0, 1.0, 3.0],
+          "rotate": [-90.0, 0.0, 0.0],
+          "translate": [0.0, 2.0, 5.0]
+        },
+        "mesh": [1, 0],
+        "material": 1
+      },
+      {
+        "transform": {
+          "scale": [3.0, 1.0, 5.0],
+          "rotate": [0.0, 0.0, 90.0],
+          "translate": [5.0, 2.0, 0.0]
+        },
+        "mesh": [1, 0],
+        "material": 1
+      },
+      {
+        "transform": {
+          "scale": [3.0, 1.0, 5.0],
+          "rotate": [0.0, 0.0, -90.0],
+          "translate": [-5.0, 2.0, 0.0]
+        },
+        "mesh": [1, 0],
+        "material": 1
+      },
+      {
+        "transform": {
+          "scale": [5.0, 1.0, 5.0],
+          "rotate": [180.0, 0.0, 0.0],
+          "translate": [0.0, 5.0, 0.0]
+        },
+        "mesh": [1, 0],
+        "material": 0
+      }
+    ],
+    "lights": [
+      {
+        "type": "point",
+        "position": [0.0, 4.99, 0.0],
+        "strength": [50.0, 50.0, 50.0]
+      }
+    ]
+  }
